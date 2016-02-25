@@ -12,7 +12,7 @@ public class MyInteger {
 		return iValue;
 	}
 
-	// *************************************************
+	// ***********************************************
 	public boolean isEven() {
 		if (iValue % 2 == 0)
 			return true;
@@ -41,7 +41,7 @@ public class MyInteger {
 		}
 	}
 
-	// ******************************************************
+	// ***********************************************
 	public static boolean isEven(int x) {
 		if (x % 2 == 0)
 			return true;
@@ -70,7 +70,7 @@ public class MyInteger {
 		}
 	}
 
-	// *********************************************************
+	// ***********************************************
 	public static boolean isEven(MyInteger y) {
 		return y.isEven();
 	}
@@ -94,5 +94,5 @@ public class MyInteger {
 	public boolean equals(MyInteger z) {
 		return z.equals(z);
 	}
-	// *******************************************
+	// ***********************************************
 }
