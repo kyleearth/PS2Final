@@ -12,6 +12,11 @@ public class MyInteger {
 		return iValue;
 	}
 
+	public void set(int number) {
+		iValue = number;
+
+	}
+
 	// ***********************************************
 	public boolean isEven() {
 		if (iValue % 2 == 0)
@@ -92,7 +97,7 @@ public class MyInteger {
 	}
 
 	public boolean equals(MyInteger z) {
-		return z.equals(z);
+		return z.equals(iValue);
 	}
 	// ***********************************************
 }
