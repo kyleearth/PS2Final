@@ -79,8 +79,7 @@ public class MyInteger_Test {
 		testing.set(4);
 		assertEquals(testing.get(), 4);
 	}
-	
-	
+
 	@Test
 	public void test7() {
 		assertTrue(testing.isEven());
