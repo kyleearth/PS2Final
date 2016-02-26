@@ -27,8 +27,30 @@ public class MyInteger_Test {
 	}
 
 	@Test
-	public void test() {
-		assertTrue(1==1);
+	public void test1() {
+		assertTrue(MyInteger.isEven(2) == true);
+		assertTrue(MyInteger.isEven(100) == true);
+		assertTrue(MyInteger.isEven(1) == false);
+		assertFalse(MyInteger.isEven(10) == false);
+		assertFalse(MyInteger.isEven(3) == true);
+		assertFalse(MyInteger.isEven(1) == true);
+
+		assertTrue(MyInteger.isOdd(0) == false);
+		assertTrue(MyInteger.isOdd(1) == true);
+		assertFalse(MyInteger.isOdd(2) == true);
+		assertFalse(MyInteger.isOdd(3) == false);
+
+		assertTrue(MyInteger.isPrime(1) == true);
+		assertTrue(MyInteger.isPrime(3) == true);
+		assertTrue(MyInteger.isPrime(17) == true);
+		assertTrue(MyInteger.isPrime(99) == false);
+		assertTrue(MyInteger.isPrime(4) == false);
+		assertTrue(MyInteger.isPrime(49) == false);
+		assertFalse(MyInteger.isPrime(0) == true);
+		assertFalse(MyInteger.isPrime(11) == false);
+
 	}
+
+	
 
 }
